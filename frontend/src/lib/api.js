@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BACKEND_URL = import.meta.env.VITE_API_URL || "http://localhost:8001";
+const BACKEND_URL = import.meta.env.VITE_API_URL || "https://dashboard-visualisation.onrender.com";
 export const API = `${BACKEND_URL}/api`;
 
 export const api = axios.create({ baseURL: API, timeout: 30000 });
